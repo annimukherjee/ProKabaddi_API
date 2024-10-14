@@ -380,12 +380,14 @@ def plot_point_progression(file_path):
     x = range(len(team1_total_points))
     plt.figure(figsize=(12, 6))
     plt.plot(x, team1_total_points, label=f'Team {team1_id}')
+    
     plt.plot(x, team2_total_points, label=f'Team {team2_id}')
     plt.xlabel('Event')
     plt.ylabel('Total Points')
     plt.title('Team Point Progression')
     plt.legend()
     plt.show()
+
 # Usage
 if __name__=="__main__":
 
